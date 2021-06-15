@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('http://dash.ga.co/assets/jeff-bg.png');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="uRFY4zBJFa4.jpg" width="300">
+    <h1>Блог Артёма</h1>
+    <ul>
+      <li><a href="#">О моей учёбе</a></li>
+      <li><a href="#">Как я отдыхаю</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Где я живу</h2>
+      <p>Я живу в красивом городе Арзамас. Этот город, хотя и старый на самом деле он очень привлекательный, у нас есть много разных мест где можно отдохнуть и полюбоваться красотой. Так же в этом городе очень много различной религиозной архитектуры, каждый человек побывав в Арзамасе найдёт что то себе по душе, кто то посмотрит на воистине красивые церкви, а кто то погуляет по прекрасному парку Гайдара.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Где я учусь</h2>
+    <p>Я учусь в Нижегородско экономико-технологическом колледже, на специальность-программист. Тут очень замечательные и отзывчивые преподаватели, которые готовы помочь и разобрать тот материал который ты не смог понять.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>О моей семье</h2>
+    <p>В данный момент, я живу один, у меня есть собака- немецкая овчарка по кличке Рекс, и кошка-Дуся. Родители мои работают хирургами. Хотя мы и живём раздельно мы при появлении свободного времени, проводим его все вместе. </p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
